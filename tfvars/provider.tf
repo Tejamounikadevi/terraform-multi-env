@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    # bucket = "daws76s-remote-state"
-    # key    = "foreach"
-    # region = "us-east-1"
-    # dynamodb_table = "daws76s-locking"
+    bucket = "daws-76s-remote-state"
+    key    = "workspace"
+    region = "us-east-1"
+    dynamodb_table = "daws76s-locking"
   }
 }
 
